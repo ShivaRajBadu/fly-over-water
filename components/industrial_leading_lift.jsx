@@ -15,7 +15,8 @@ function Industrial_lift() {
             className="w-full h-full object-cover"
             autoPlay={true}
             muted={true}
-            loop={true}>
+            loop={true}
+          >
             <source src="high_3.mp4" />
           </video>
           ;
@@ -25,7 +26,8 @@ function Industrial_lift() {
             className="w-full h-full object-cover"
             autoPlay={true}
             muted={true}
-            loop={true}>
+            loop={true}
+          >
             <source src="high_3.mp4" />
           </video>
           ;
@@ -34,13 +36,14 @@ function Industrial_lift() {
           <video
             className="w-full h-full object-cover"
             autoPlay={true}
-            muted={true}>
+            muted={true}
+          >
             <source src="high_2.mp4" />
           </video>
           ;
         </div>
       </div>
-      <div className="absolute top-1/2 text-center left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full z-50">
+      <div className="absolute top-1/2 text-center left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] mx-auto ">
         <h1 className="font-sans font-[700] text-[70px] my-3 text-white">
           THE INDUSTRY-LEADING LIFT3
         </h1>
@@ -57,10 +60,11 @@ function Industrial_lift() {
           Learn More
         </button>
       </div>
-      <div className="flex  gap-8 mx-auto px-8 w-full absolute bottom-10 z-50">
+      <div className="flex  gap-8 mx-auto px-8 w-full absolute bottom-10 ">
         <div
           onClick={() => handleChange("first")}
-          className="w-[33%] cursor-pointer">
+          className="w-[33%] cursor-pointer"
+        >
           <p className="text-white font-sans text-[19px] py-1 font-[700]">
             Aerodynamic
             <span className="text-[rgba(255,255,255,0.6)]">Design</span>
@@ -69,7 +73,8 @@ function Industrial_lift() {
         </div>
         <div
           onClick={() => handleChange("second")}
-          className="w-[33%] cursor-pointer">
+          className="w-[33%] cursor-pointer"
+        >
           <p className="text-white font-sans text-[19px] py-1 font-[700]">
             Upgraded
             <span className="text-[rgba(255,255,255,0.6)]">Propulsion</span>
@@ -78,7 +83,8 @@ function Industrial_lift() {
         </div>
         <div
           onClick={() => handleChange("third")}
-          className="w-[33%] cursor-pointer">
+          className="w-[33%] cursor-pointer"
+        >
           <p className="text-white font-sans py-1 text-[19px] font-[700]">
             Incresed
             <span className="text-[rgba(255,255,255,0.6)]">Ride Time</span>

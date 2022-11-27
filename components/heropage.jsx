@@ -1,7 +1,7 @@
 function HeroPage() {
   return (
     <div className=" relative">
-      <div className="absolute top-[65%] z-10 left-1/2 w-full transform -translate-x-1/2 -translate-y-1/2 text-center  ">
+      <div className="absolute top-[65%]  left-1/2 w-full transform -translate-x-1/2 -translate-y-1/2 text-center  ">
         <h1 className="uppercase text-[120px] font-[700] text-[#fff] w-full my-20">
           FLY OVER WATER
         </h1>
@@ -20,7 +20,8 @@ function HeroPage() {
           autoPlay={true}
           loop={true}
           muted={true}
-          className=" w-full h-full object-cover">
+          className=" w-full h-full object-cover"
+        >
           <source src="/high.mp4" />
         </video>
       </div>
