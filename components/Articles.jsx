@@ -1,6 +1,6 @@
 function Articles() {
   return (
-    <div className="bg-[#f5f5f5] py-10">
+    <div className="bg-[#f5f5f5] py-10 pt-20">
       <p className="text-center text-[36px] text-[#919090] font-normal max-w-[540px] mx-auto">
         Lift eFoil named one of the{" "}
         <span className="text-[#474646] "> 10 Best Toys and Tenders.</span>

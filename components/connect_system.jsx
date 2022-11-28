@@ -1,7 +1,21 @@
 import { useState } from "react";
 import Modal from "./Modal";
 
-function Connect_system({ isOpen, handleClose, handleOpen }) {
+function Connect_system() {
+  const [isOpen, setIsOpen] = useState(false);
+  const handleOpen = () => {
+    setIsOpen(true);
+    // disable scroll
+    if (typeof window != "undefined" && window.document) {
+      document.body.style.overflow = "hidden";
+    }
+  };
+  const handleClose = () => {
+    console.log("clicked");
+    setIsOpen((prev) => !prev);
+    // Unsets Background Scrolling to use when SideDrawer/Modal is closed
+    document.body.style.overflow = "unset";
+  };
   return (
     <>
       {isOpen && (

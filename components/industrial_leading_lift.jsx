@@ -1,45 +1,26 @@
 import { useState } from "react";
 
 function Industrial_lift() {
-  const [isClicked, setIsClicked] = useState(false);
-  let classes = "absolute inset-0";
-  const handleChange = (tag) => {
-    classes = " absolute inset-0 z-20";
-    console.log(classes);
+  const srcs = ["high_3.mp4", "high_2.mp4", "high_4.mp4"];
+  const [source, setSource] = useState("high_3.mp4");
+  setTimeout(function () {
+    setSource(srcs[2]);
+  }, 10000);
+
+  const handleChange = (index) => {
+    setSource(srcs[index]);
   };
+
   return (
     <div className="h-[900px] w-[100%] relative bg-[#474646]">
       <div className="h-full w-full relative">
-        <div className={classes}>
+        <div className="absolute inset-0">
           <video
             className="w-full h-full object-cover"
             autoPlay={true}
             muted={true}
-            loop={true}
-          >
-            <source src="high_3.mp4" />
-          </video>
-          ;
-        </div>
-        <div className={classes}>
-          <video
-            className="w-full h-full object-cover"
-            autoPlay={true}
-            muted={true}
-            loop={true}
-          >
-            <source src="high_3.mp4" />
-          </video>
-          ;
-        </div>
-        <div className={classes}>
-          <video
-            className="w-full h-full object-cover"
-            autoPlay={true}
-            muted={true}
-          >
-            <source src="high_2.mp4" />
-          </video>
+            src={source}
+          />
           ;
         </div>
       </div>
@@ -61,30 +42,21 @@ function Industrial_lift() {
         </button>
       </div>
       <div className="flex  gap-8 mx-auto px-8 w-full absolute bottom-10 ">
-        <div
-          onClick={() => handleChange("first")}
-          className="w-[33%] cursor-pointer"
-        >
+        <div onClick={() => handleChange(0)} className="w-[33%] cursor-pointer">
           <p className="text-white font-sans text-[19px] py-1 font-[700]">
             Aerodynamic
             <span className="text-[rgba(255,255,255,0.6)]">Design</span>
           </p>
           <div className="w-full border  border-white"> </div>
         </div>
-        <div
-          onClick={() => handleChange("second")}
-          className="w-[33%] cursor-pointer"
-        >
+        <div onClick={() => handleChange(1)} className="w-[33%] cursor-pointer">
           <p className="text-white font-sans text-[19px] py-1 font-[700]">
             Upgraded
             <span className="text-[rgba(255,255,255,0.6)]">Propulsion</span>
           </p>
           <div className="w-full border border-white"> </div>
         </div>
-        <div
-          onClick={() => handleChange("third")}
-          className="w-[33%] cursor-pointer"
-        >
+        <div onClick={() => handleChange(2)} className="w-[33%] cursor-pointer">
           <p className="text-white font-sans py-1 text-[19px] font-[700]">
             Incresed
             <span className="text-[rgba(255,255,255,0.6)]">Ride Time</span>

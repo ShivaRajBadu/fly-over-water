@@ -16,21 +16,6 @@ import Surf_foils from "../components/surf_foils";
 import Video_section from "../components/video_section";
 
 export default function Home() {
-  const [isOpen, setIsOpen] = useState(false);
-  const handleOpen = () => {
-    setIsOpen(true);
-    // disable scroll
-    if (typeof window != "undefined" && window.document) {
-      document.body.style.overflow = "hidden";
-    }
-  };
-  const handleClose = () => {
-    console.log("clicked");
-    setIsOpen((prev) => !prev);
-    // Unsets Background Scrolling to use when SideDrawer/Modal is closed
-    document.body.style.overflow = "unset";
-  };
-
   return (
     <div className=" w-full h-full overflow-hidden">
       <Head>
@@ -50,6 +35,11 @@ export default function Home() {
           integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
           crossorigin="anonymous"
           referrerpolicy="no-referrer"
+        />
+        {/* mapbox */}
+        <link
+          href="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css"
+          rel="stylesheet"
         />
       </Head>
       <div className="relative">
@@ -78,21 +68,19 @@ export default function Home() {
             Discover
           </button>
         </div>
-        <Lift />
-        <Industrial_lift />
+        <Lift
+          video_src="/high (1).mp4"
+          title="THE NEW LIFT3 F"
+          sub_title="Ready for the next era in watersports?"
+          description="With the LIFT3 F, we took a new approach to our industry leading eFoils–working with fiberglass instead of carbon fiber to offer stability over pure performance, at a new low price."
+          button_value="Learn More"
+        />
         <Market_Leading />
+        <Industrial_lift />
         <Surf_foils />
-        <Connect_system
-          isOpen={isOpen}
-          handleClose={handleClose}
-          handleOpen={handleOpen}
-        />
+        <Connect_system />
         <Lift_connects_system />
-        <Video_section
-          isOpen={isOpen}
-          handleClose={handleClose}
-          handleOpen={handleOpen}
-        />
+        <Video_section />
         <Articles />
         <BestSeller />
         <Footer />
