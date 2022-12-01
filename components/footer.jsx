@@ -14,7 +14,7 @@ function Footer() {
               placeholder="Enter email address"
             />
             <input
-              className="absolute top-2 cursor-pointer  hover:bg-[#36b7b2] px-3 text-[16px] py-2 rounded-[30px] right-2 text-white z-20"
+              className="absolute top-2 cursor-pointer  hover:bg-[#36b7b2] px-3 text-[16px] py-2 rounded-[30px] right-2 text-white "
               type="submit"
               value="Sign up"
             />

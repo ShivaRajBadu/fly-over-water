@@ -185,7 +185,7 @@ function Header() {
               stories: false,
             })
           }
-          className={`z-10 fixed  top-0 w-full  font-[Tinos]     py-2    ${
+          className={`z-20 fixed  top-0 w-full  font-[Tinos]     py-2    ${
             lastScrollY > 0 && "bg-white shadow-xl"
           } hover:bg-white group`}
         >

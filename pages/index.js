@@ -41,6 +41,7 @@ export default function Home() {
           href="https://api.mapbox.com/mapbox-gl-js/v1.10.1/mapbox-gl.css"
           rel="stylesheet"
         />
+        <title>Lift Foils | efoil Electric Surf</title>
       </Head>
       <div className="relative">
         <Header />
@@ -78,7 +79,14 @@ export default function Home() {
         <Market_Leading />
         <Industrial_lift />
         <Surf_foils />
-        <Connect_system />
+        <Connect_system
+          title="THE LIFT CONNECT SYSTEM"
+          extra_txt={false}
+          image="/connect.webp"
+          button_value="Watch Video"
+          description="Maximize your eFoil experience with the new  Lift Connect System (LCS)  propeller kit, featuring an  innovative click-and-lock mechanism for easy interchanging of your eFoil propeller, shroud or
+                folding propeller, without the need for tools."
+        />
         <Lift_connects_system />
         <Video_section />
         <Articles />
