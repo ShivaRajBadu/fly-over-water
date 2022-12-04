@@ -2,8 +2,10 @@ function Surf_foils({ title, desc, surfData }) {
   return (
     <div className="bg-[#2E3335] py-10 font-['News Cycle']">
       <div className="text-center mb-24">
-        <h1 className="text-[70px] font-[700] text-white my-2">{title}</h1>
-        <p className="text-[36px] font-[400] text-[#6C6B6B] max-w-[44%] px-5 mx-auto font-['News Cycle'] text-center leading-tight">
+        <h1 className="text-[60px] lg:text-[70px] font-[700] text-white my-2">
+          {title}
+        </h1>
+        <p className="text-[30px] lg:text-[36px] font-[400] text-[#6C6B6B] max-w-[44%] px-5 mx-auto font-['News Cycle'] text-center leading-tight">
           {/* For over 10 years we've made performance foils for{" "}
           <span className="text-white"> the committed</span> ,the
           <span className="text-white"> future forward</span>, the{" "}

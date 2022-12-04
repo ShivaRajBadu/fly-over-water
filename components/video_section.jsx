@@ -74,7 +74,7 @@ function Video_section({ videoSectionData }) {
             <h2 className="text-[24px] text-white  font-[400] m-2 relative">
               {videoSectionData.sub_title}
             </h2>
-            <div className="flex gap-2">
+            <div className="flex gap-2 flex-nowrap overflow-y-hidden overflow-x-scroll ">
               {videoSectionData.videoData.map((sr, index) => (
                 <div key={index} onClick={() => handleOpen(index)}>
                   <div className="h-[192px] w-[300px] my-2 cursor-pointer  group  overflow-hidden ">

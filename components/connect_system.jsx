@@ -41,15 +41,15 @@ function Connect_system({
           <h1
             className={`${
               button_value === "Configure Now"
-                ? "text-[70px] mb-4"
-                : "text-[90px]"
+                ? "text-[60px] lg:text-[70px] mb-4"
+                : "text-[75px] lg:text-[90px]"
             } font-[700] text-white`}
           >
             {title}
           </h1>
           <div className="h-[312px]">
             {description && (
-              <p className="text-[26px] f-full max-w-[400px] mx-auto text-[#fff]/60">
+              <p className="text-[22px] mt-3 lg:text-[26px] f-full max-w-[400px] mx-auto text-[#fff]/60">
                 {/* Maximize your eFoil experience with the new{" "}
                 <span className="text-white opacity-100">
                   Lift Connect System (LCS){" "}

@@ -1,7 +1,7 @@
 function Articles() {
   return (
     <div className="bg-[#f5f5f5] py-10 pt-20">
-      <p className="text-center text-[36px] text-[#919090] font-normal max-w-[540px] mx-auto">
+      <p className="text-center text-[36px] text-[#919090] font-normal max-w-[540px] mb-10 mx-auto">
         Lift eFoil named one of the{" "}
         <span className="text-[#474646] "> 10 Best Toys and Tenders.</span>
       </p>
@@ -14,7 +14,7 @@ function Articles() {
             Business Insider
           </div>
           {/* content */}
-          <p className="text-[26px] text-[#979090] font-normal font-['Tinos'] py-5 text-center">
+          <p className=" text-[20px] lg:text-[26px] text-[#979090] font-normal font-['Tinos'] py-5 text-center">
             We went to Isabela, Puerto Rico to try out the &quot; flying
             surfboard,&quot; and it turns out,{" "}
             <span className="text-[#474646] font-normal">
@@ -29,7 +29,7 @@ function Articles() {
             Robb Report
           </div>
           {/* content */}
-          <p className="text-[26px] text-[#979090] font-normal font-['Tinos'] py-5 text-center">
+          <p className="text-[20px] lg:text-[26px] text-[#979090] font-normal font-['Tinos'] py-5 text-center">
             You&quot;ll be gliding just above the water in no time.
           </p>
         </div>
@@ -40,7 +40,7 @@ function Articles() {
             Bloomberg
           </div>
           {/* content */}
-          <p className="text-[26px] text-[#979090] font-normal font-['Tinos'] py-5 text-center">
+          <p className="text-[20px] lg:text-[26px] text-[#979090] font-normal font-['Tinos'] py-5 text-center">
             <span className="text-[#474646]">As I accelerate</span> toward the
             horizon, I almost forget what it means to
             <span className="text-[#474646]">
@@ -57,7 +57,7 @@ function Articles() {
               BBC
             </p>
             {/* content */}
-            <p className="text-[26px] text-[#979090] font-normal font-['Tinos'] py-5">
+            <p className="text-[20px] lg:text-[26px] text-[#979090] font-normal font-['Tinos'] py-5">
               Innovative surfing tech{" "}
               <span className="text-[#474646]">making waves.</span>
             </p>

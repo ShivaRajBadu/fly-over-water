@@ -1,13 +1,13 @@
 function Footer() {
   return (
     <div className="max-w-[90%] mx-auto py-8">
-      <div className="flex justify-between my-8">
+      <div className="flex gap-5 justify-between my-8">
         <div>
-          <p className=" text-[19px] text-[#474646]">
+          <p className="text-[16px] lg:text-[19px] text-[#474646]">
             Join the Lift Newsletter
             <span className="block">for the latest videos & releases</span>
           </p>
-          <div className="relative w-[360px] my-6">
+          <div className="relative w-[280px] lg:w-[360px] my-6">
             <input
               className="bg-[#474646] text-white   outline-none w-full py-4 indent-5 rounded-[30px]"
               type="text"
@@ -19,7 +19,7 @@ function Footer() {
               value="Sign up"
             />
           </div>
-          <p className="max-w-[310px] text-[12px] text-[#919090]">
+          <p className="max-w-[310px] text-[10px] lg:text-[12px] text-[#919090]">
             By signing up to the Lift Foils newsletter you agree to our{" "}
             <a className="text-[#474646]" href="">
               Terms and Conditions
@@ -31,9 +31,11 @@ function Footer() {
             , including our Cookie use.
           </p>
         </div>
-        <div className="flex gap-6 items-center">
-          <div className="mx-5">
-            <h3 className="text-[#474646] text-[19px]">Customer Service</h3>
+        <div className="flex gap-4 lg:gap-6 items-start">
+          <div className="mx-3 lg:mx-5">
+            <h3 className="text-[#474646] font-bold text-[19px]">
+              Customer Service
+            </h3>
             <ul>
               <li className="py-1">
                 <a className="text-[#919090] text-[19px] " href="">
@@ -62,8 +64,8 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="mx-5">
-            <h3 className="text-[#474646] text-[19px]">About</h3>
+          <div className="mx-3 lg:mx-5">
+            <h3 className="text-[#474646] font-bold text-[19px]">About</h3>
             <ul>
               <li className="py-1">
                 <a className="text-[#919090] text-[19px] " href="">
@@ -92,8 +94,8 @@ function Footer() {
               </li>
             </ul>
           </div>
-          <div className="mx-5">
-            <h3 className="text-[#474646] text-[19px]">Legal</h3>
+          <div className=" mx-3 lg:mx-5">
+            <h3 className="text-[#474646] font-bold text-[19px]">Legal</h3>
             <ul>
               <li className="py-1">
                 <a className="text-[#919090] text-[19px] " href="">

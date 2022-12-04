@@ -25,10 +25,10 @@ function Industrial_lift() {
         </div>
       </div>
       <div className="absolute top-1/2 text-center left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-[80%] mx-auto ">
-        <h1 className="font-sans font-[700] text-[70px] my-3 text-white">
+        <h1 className="font-sans font-[700] text-[55px] lg:text-[70px] my-3 text-white text-center">
           THE INDUSTRY-LEADING LIFT3
         </h1>
-        <p className="w-[25%] mx-auto  text-[rgba(255,255,255,0.6)] mb-5">
+        <p className="lg:w-[25%] w-[40%] mx-auto  text-[rgba(255,255,255,0.6)] mb-5">
           The LIFT3 eFoil features best-in-class aerodynamics
           <span className="text-white">
             and maneuverability, extra-durable construction, extended ride time,

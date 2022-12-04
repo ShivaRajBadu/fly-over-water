@@ -26,9 +26,9 @@ function Market_Leading({ title, desc, listsData, button_name }) {
         {listsData.map((lis, index) => (
           <div
             key={index}
-            className="w-[25%] h-[160px] grid place-content -center border rounded-[20px]"
+            className="w-[25%] h-[160px] grid place-content-center border rounded-[20px]"
           >
-            <h2 className="text-center text-[26px]  text-black">
+            <h2 className="text-center lg:text-[26px] text-[22px]  text-black">
               <span className="block text-[#6C6B6B]">{lis.text}</span>{" "}
               {lis.sub_text}
             </h2>

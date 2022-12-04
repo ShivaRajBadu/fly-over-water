@@ -16,7 +16,7 @@ function Lift_connects_system() {
                 src="/lift_connect.webp"
                 alt=""
               />
-              <h2 className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-[50px] font-[700] font-['News Cycle] text-white">
+              <h2 className="absolute top-[50%] left-[50%] -translate-x-[50%] -translate-y-[50%] text-[30px] lg:text-[50px] font-[700] font-['News Cycle] text-white">
                 SHOP LCS
               </h2>
             </div>
@@ -30,11 +30,13 @@ function Lift_connects_system() {
                 src="/LCS1.webp"
                 alt="image is here"
               />
-              <div className="absolute bottom-5 left-5">
-                <h4 className="text-[#474646] text--[18px] font-[300] font-['News Cycle'] capitalize">
+              <div className="absolute lg:bottom-5 bottom-2 left-5">
+                <h4 className="text-[#474646] text-[12px] lg:text-[18px] font-[300] font-['News Cycle'] capitalize">
                   LCS FIXED ALUMINUM PROPELLER KIT
                 </h4>
-                <p className="text-[18px] text-[#919090]">$990.00</p>
+                <p className="text-[12px] lg:text-[18px] text-[#919090]">
+                  $990.00
+                </p>
               </div>
             </div>
           </div>
@@ -47,11 +49,13 @@ function Lift_connects_system() {
                 src="/LCS2.webp"
                 alt="image is here "
               />
-              <div className="absolute bottom-5 left-5">
-                <h4 className="text-[#474646] text--[18px] font-[300] font-['News Cycle'] capitalize">
+              <div className="absolute lg:bottom-5 bottom-2 left-5">
+                <h4 className="text-[#474646] text-[12px] lg:text-[18px] font-[300] font-['News Cycle'] capitalize">
                   LCS FIXED ALUMINUM PROPELLER KIT
                 </h4>
-                <p className="text-[18px] text-[#919090]"> $990.00</p>
+                <p className="text-[12px] lg:text-[18px] text-[#919090]">
+                  $990.00
+                </p>
               </div>
             </a>
           </div>
