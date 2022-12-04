@@ -15,8 +15,8 @@ function Articles() {
           </div>
           {/* content */}
           <p className="text-[26px] text-[#979090] font-normal font-['Tinos'] py-5 text-center">
-            We went to Isabela, Puerto Rico to try out the 'flying surfboard,'
-            and it turns out,{" "}
+            We went to Isabela, Puerto Rico to try out the &quot; flying
+            surfboard,&quot; and it turns out,{" "}
             <span className="text-[#474646] font-normal">
               riding the efoil was easier than we expected.
             </span>
@@ -30,7 +30,7 @@ function Articles() {
           </div>
           {/* content */}
           <p className="text-[26px] text-[#979090] font-normal font-['Tinos'] py-5 text-center">
-            You’ll be gliding just above the water in no time.
+            You&quot;ll be gliding just above the water in no time.
           </p>
         </div>
         {/* third */}

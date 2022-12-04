@@ -22,7 +22,9 @@ function Efoil_sizes() {
             <img src="/size_1.webp" alt="" />
           </div>
           <div>
-            <p className="text-[18px] text-[#474646] mb-4">LIFT 4'2" Pro</p>
+            <p className="text-[18px] text-[#474646] mb-4">
+              LIFT 4&quote;2&rdquo; Pro
+            </p>
             <Link href="/product">
               <a className="text-[#fff] border-[#474646] bg-[#474646] hover:bg-[#6c6b6b] hover:border-[#6c6b6b] border px-8 py-3 rounded-[25px] delay-100 text-[16px]">
                 Buy
@@ -35,7 +37,9 @@ function Efoil_sizes() {
             <img src="/size_2.webp" alt="" />
           </div>
           <div>
-            <p className="text-[18px] text-[#474646] mb-4">LIFT 4'9" Sport</p>
+            <p className="text-[18px] text-[#474646] mb-4">
+              LIFT 4&quot;9&rdquo; Sport
+            </p>
             <Link href="/product">
               <a className="text-[#fff] border-[#474646] bg-[#474646] hover:bg-[#6c6b6b] hover:border-[#6c6b6b] border px-8 py-3 rounded-[25px] delay-100 text-[16px]">
                 Buy
@@ -48,7 +52,9 @@ function Efoil_sizes() {
             <img src="/size_3.webp" alt="" />
           </div>
           <div>
-            <p className="text-[18px] text-[#474646] mb-4">LIFT 5'4" Cruiser</p>
+            <p className="text-[18px] text-[#474646] mb-4">
+              LIFT 5&quote;4&rdquo; Cruiser
+            </p>
             <Link href="/product">
               <a className="text-[#fff] border-[#474646] bg-[#474646] hover:bg-[#6c6b6b] hover:border-[#6c6b6b] border px-8 py-3 rounded-[25px] delay-100 text-[16px]">
                 Buy
@@ -62,7 +68,7 @@ function Efoil_sizes() {
           </div>
           <div>
             <p className="text-[18px] text-[#474646] mb-4">
-              LIFT 5'9" Explorer
+              LIFT 5&quot;9&rdquo; Explorer
             </p>
             <Link href="/product">
               <a className="text-[#fff] border-[#474646] bg-[#474646] hover:bg-[#6c6b6b] hover:border-[#6c6b6b] border px-8 py-3 rounded-[25px] delay-100 text-[16px]">

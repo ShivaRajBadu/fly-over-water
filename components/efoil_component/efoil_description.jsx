@@ -21,8 +21,9 @@ function Efoil_description({
         </button>
       </div>
       <div className="flex  flex-nowrap overflow-x-scroll overflow-y-hidden gap-[2rem] my-10">
-        {data.map((da) => (
+        {data.map((da, index) => (
           <div
+            key={index}
             className={`min-w-[550px]${
               da.image ? " h-[550px]" : "h-[190px]"
             }  my-4 `}
