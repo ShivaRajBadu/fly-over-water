@@ -13,9 +13,74 @@ import Lift_connects_system from "../components/lift_connects_system";
 import Market_Leading from "../components/market_leading";
 import Modal from "../components/Modal";
 import Surf_foils from "../components/surf_foils";
+import Textfull from "../components/textfull";
 import Video_section from "../components/video_section";
 
 export default function Home() {
+  const videoSectionData = {
+    bg_image: "/video_section.webp",
+    main_title: "Lift3 Efoil",
+    main_desc: "in Cote d'Azur",
+    sub_title: "Lift3 eFoil in Action",
+    modalSrcs: [
+      "https://www.youtube.com/embed/0xs-oaSZdqE",
+      "https://www.youtube.com/embed/-arxoYcRWeM",
+      "https://www.youtube.com/embed/OP-00EwLdiU",
+      "https://www.youtube.com/embed/482ZqOLsLwE",
+    ],
+    videoData: [
+      {
+        videoSrc: "/high (1).mp4",
+        title: "The LIFT3 F",
+        sub_title: "A New Geneartion of Lift",
+      },
+      {
+        videoSrc: "high_2.mp4",
+        title: "The LIFT3 F",
+        sub_title: "A New Geneartion of Lift",
+      },
+      {
+        videoSrc: "high_3.mp4",
+        title: "The LIFT3 F",
+        sub_title: "A New Geneartion of Lift",
+      },
+    ],
+  };
+  const surfData = [
+    {
+      image: "wing.webp",
+      title: "Wings",
+      button_name: "Learn More",
+    },
+    {
+      image: "wing2.webp",
+      title: "Boards",
+      button_name: "Learn More",
+    },
+    {
+      image: "wing3.webp",
+      title: "Apparel",
+      button_name: "Learn More",
+    },
+  ];
+  const listsData = [
+    {
+      text: "Speed",
+      sub_text: "Up to 30mph",
+    },
+    {
+      text: "Ride Time",
+      sub_text: "Up to 100min",
+    },
+    {
+      text: "Customizable",
+      sub_text: "The Perfect Ride",
+    },
+    {
+      text: "Advanced",
+      sub_text: "Safety Features",
+    },
+  ];
   return (
     <div className=" w-full h-full overflow-hidden">
       <Head>
@@ -46,29 +111,12 @@ export default function Home() {
       <div className="relative">
         <Header />
         <HeroPage />
-        <div className=" bg-white text-center py-16 ">
-          <h1 className="text-[36px] max-w-[28%] mx-auto font-light font-sans leading-[41px]  mb-10">
-            A feeling
-            <span className="text-[#474646] font-thin">
-              that can’t be described but can only be
-            </span>
-            experienced
-          </h1>
-          <p className="text-[19px] leading-[28.5px] w-[30%] mx-auto block mt-[3rem] mb-10 font-sans font-thin text-[#474646] ">
-            We’ve spent over a decade developing and fine-tuning the ultimate
-            foiling experience. Whether you’re a complete beginner or an
-            experienced thrill-seeker, into serene lakes or riding big surf, the
-            Lift eFoil allows you to
-            <span className="font-normal"> craft the adventure</span> that’s
-            best for you with an all-electric, silent motor that
-            <span className=" font-normal">
-              glides through any body of water.
-            </span>
-          </p>
-          <button className="text-[#fff] border-[#474646] bg-[#474646] hover:bg-[#6c6b6b] hover:border-[#6c6b6b] border px-8 py-3 rounded-[25px] delay-100 text-[16px]">
-            Discover
-          </button>
-        </div>
+        <Textfull
+          main_text="A feeling that can’t be described but can only beexperienced
+            "
+          sub_text="We’ve spent over a decade developing and fine-tuning the ultimate foiling experience. Whether you’re a complete beginner or an experienced thrill-seeker, into serene lakes or riding big surf, the Lift eFoil allows you to craft the adventure that’s best for you with an all-electric, silent motor that glides through any body of water."
+          button_value="Discover"
+        />
         <Lift
           video_src="/high (1).mp4"
           title="THE NEW LIFT3 F"
@@ -76,9 +124,19 @@ export default function Home() {
           description="With the LIFT3 F, we took a new approach to our industry leading eFoils–working with fiberglass instead of carbon fiber to offer stability over pure performance, at a new low price."
           button_value="Learn More"
         />
-        <Market_Leading />
+        <Market_Leading
+          title="The Market Leading eFoil
+            Designed for Experience"
+          desc="The LIFT3 eFoil features an updated shape for increased aerodynamics and maneuverability, upgraded extra-durable construction, extended ride time, and the highest speed on the market."
+          listsData={listsData}
+          button_name="Configure Now"
+        />
         <Industrial_lift />
-        <Surf_foils />
+        <Surf_foils
+          title="SURF FOILS"
+          desc="For over 10 years we've made performance foils for the committed, the future forward, the risk takers--riders that need foil hardware that is both innovative and unbelievably tough."
+          surfData={surfData}
+        />
         <Connect_system
           title="THE LIFT CONNECT SYSTEM"
           extra_txt={false}
@@ -88,7 +146,7 @@ export default function Home() {
                 folding propeller, without the need for tools."
         />
         <Lift_connects_system />
-        <Video_section />
+        <Video_section videoSectionData={videoSectionData} />
         <Articles />
         <BestSeller />
         <Footer />

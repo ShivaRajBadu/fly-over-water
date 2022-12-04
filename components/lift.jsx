@@ -7,7 +7,7 @@ function Lift({
   islift3,
 }) {
   return (
-    <div className="relative h-[900px] w-[100%]">
+    <div className="relative h-[900px] w-[100%] ">
       <div className="w-full h-full">
         <video
           autoPlay={true}
@@ -18,17 +18,19 @@ function Lift({
           <source src={video_src} />
         </video>
       </div>
-      <div className="absolute top-[60%] left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-center ">
-        <h1 className="font-sans font-[700] text-[70px] text-[#fff] uppercase my-3">
+      <div className="absolute -bottom-[14rem] lg:-bottom-[3rem] h-auto left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-full text-center ">
+        <h1
+          className={`font-sans font-[700] text-[70px]  lg:text-[80px] text-[#fff] uppercase my-3`}
+        >
           {title}
         </h1>
-        <h2 className="text-[36px] font-sans leading-[41.4px] font-[400] text-white">
+        <h2 className=" text-[30px] lg:text-[36px] font-sans leading-[41.4px] font-[400] text-white">
           {sub_title}
         </h2>
         <p
-          className={` text-[rgba(255,255,255,0.6)] text-[28px] leading-[41.4px] ${
-            islift3 ? "w-[25%]" : "w-[35%]"
-          }   mx-auto font-sans font-[300] mb-28 mt-1`}
+          className={` text-[rgba(255,255,255,0.6)] text-[28px]  leading-[41.4px] ${
+            islift3 ? "w-[35%] lg:w-[25%]" : "w-[55%] lg:w-[35%]"
+          }   mx-auto font-sans font-[300] my-5 mt-1`}
         >
           {description}
           {/* With the LIFT3 F, we took a new approach to our industry leading
@@ -37,7 +39,7 @@ function Lift({
             stability over pure performance, at a new low price.
           </span> */}
         </p>
-        <div className="flex gap-5 justify-center items-center  ">
+        <div className="flex gap-5 justify-center items-center  my-16 ">
           {islift3 && (
             <ul className="grid gap-5 auto-cols-auto content-center grid-flow-col  grid-row-auto bg-[#fff]/10 backdrop-blur-[10px] h-[55px] w-[430px] rounded-[9999px] px-[48px]">
               <li className="text-[#fff]/60 text-[14px]">

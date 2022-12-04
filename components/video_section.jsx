@@ -1,18 +1,12 @@
 import { useState } from "react";
 import Modal from "./Modal";
 
-function Video_section() {
-  const srcs = [
-    "https://www.youtube.com/embed/0xs-oaSZdqE",
-    "https://www.youtube.com/embed/-arxoYcRWeM",
-    "https://www.youtube.com/embed/OP-00EwLdiU",
-    "https://www.youtube.com/embed/482ZqOLsLwE",
-  ];
+function Video_section({ videoSectionData }) {
   const [isOpen, setIsOpen] = useState(false);
   const [source, setSource] = useState("");
   const handleOpen = (index) => {
     setIsOpen(true);
-    setSource(srcs[index]);
+    setSource(videoSectionData.modalSrcs[index]);
     // disable scroll
     if (typeof window != "undefined" && window.document) {
       document.body.style.overflow = "hidden";
@@ -28,7 +22,14 @@ function Video_section() {
   return (
     <>
       {isOpen && <Modal src={source} handleClose={handleClose} />}
-      <div className="h-[790px] font-['News Cycle'] bg-[url('/video_section.webp')] bg-no-repeat bg-cover mt-8 bg-bottom py-6">
+      <div className="h-[800px] font-['News Cycle']  bg-no-repeat bg-cover mt-8 bg-bottom py-6 relative">
+        <img
+          className="absolute h-full w-full inset-0 -z-10"
+          src={videoSectionData.bg_image}
+          alt=""
+        />
+        {/* image overlay */}
+        <div className="bg-gradient-to-t from-[#2e3335]/90 to-[#3e3335a4] h-[200px] w-[100%] absolute bottom-0 -z-10  "></div>
         <div className="w-[90%] mx-auto flex flex-col justify-between h-full ">
           {/* first section */}
 
@@ -36,9 +37,13 @@ function Video_section() {
             {" "}
             <div className="py-10">
               <h2 className="text-[25px] text-white font-[300] tracking-widest ">
-                Lift3 Efoil
+                {videoSectionData.main_title}
               </h2>
-              <p className="text-[24px] text-[#fff]/60">in Cote d'Azur</p>
+              {videoSectionData.main_desc && (
+                <p className="text-[24px] text-[#fff]/60">
+                  {videoSectionData.main_desc}
+                </p>
+              )}
             </div>
             <div>
               {" "}
@@ -66,61 +71,41 @@ function Video_section() {
 
           {/* second section */}
           <div className="font-['News Cycle']">
-            <h2 className="text-[24px] text-white  font-[400] my-2">
-              Lift3 eFoil in Action
+            <h2 className="text-[24px] text-white  font-[400] m-2 relative">
+              {videoSectionData.sub_title}
             </h2>
             <div className="flex gap-2">
-              {/* first */}
-              <div onClick={() => handleOpen(1)}>
-                <div className="h-[192px] w-[300px] my-2 cursor-pointer">
-                  <video
-                    className="w-full h-full object-cover rounded-lg"
-                    autoPlay={true}
-                    muted={true}
-                    loop={true}
-                    src="/high (1).mp4"
-                  ></video>
-                </div>
+              {videoSectionData.videoData.map((sr, index) => (
+                <div key={index} onClick={() => handleOpen(index)}>
+                  <div className="h-[192px] w-[300px] my-2 cursor-pointer  group  overflow-hidden ">
+                    <div className="relative w-full h-full">
+                      <video
+                        className="hover:border hover:border-[#36b7b2] w-full h-full  object-cover rounded-lg"
+                        autoPlay={true}
+                        muted={true}
+                        loop={true}
+                        src={sr.videoSrc}
+                      ></video>
+                      <img
+                        className="w-6 h-6 absolute  group-hover:block
+                        hidden bottom-2 right-2 z-10"
+                        src="play_icon.svg"
+                        alt="play icons"
+                      />
+                    </div>
+                  </div>
 
-                <div className="mx-1 my-2">
-                  <h3 className="text-[16px] text-white">The LIFT3 F</h3>
-                  <p className="text-[#fff]/60">A New Geneartion of Lift</p>
+                  <div className="mx-1 my-2">
+                    {sr.title && (
+                      <h3 className="text-[16px] text-white">{sr.title}</h3>
+                    )}
+
+                    {sr.sub_title && (
+                      <p className="text-[#fff]/60">{sr.sub_title}</p>
+                    )}
+                  </div>
                 </div>
-              </div>
-              {/* second */}
-              <div onClick={() => handleOpen(2)}>
-                <div className="h-[192px] w-[300px] my-2 cursor-pointer">
-                  {" "}
-                  <video
-                    className="w-full h-full object-cover rounded-lg"
-                    autoPlay={true}
-                    muted={true}
-                    loop={true}
-                    src="/high (1).mp4"
-                  ></video>
-                </div>
-                <div className="mx-1">
-                  <h3 className="text-[16px] text-white">The LIFT3 F</h3>
-                  <p className="text-[#fff]/60">A New Geneartion of Lift</p>
-                </div>
-              </div>
-              {/* third */}
-              <div onClick={() => handleOpen(3)}>
-                <div className="h-[192px] w-[300px] my-2 cursor-pointer">
-                  {" "}
-                  <video
-                    className="w-full h-full object-cover rounded-lg"
-                    autoPlay={true}
-                    muted={true}
-                    loop={true}
-                    src="/high (1).mp4"
-                  ></video>
-                </div>
-                <div className="mx-1">
-                  <h3 className="text-[16px] text-white">The LIFT3 F</h3>
-                  <p className="text-[#fff]/60">A New Geneartion of Lift</p>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>

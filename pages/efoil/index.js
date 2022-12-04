@@ -50,7 +50,23 @@ function EFoil() {
       },
     ],
   };
-
+  const hoverData = [
+    {
+      first_text: "MOTOR",
+      second_text:
+        "The LIFT3 eFoil motor is extremely efficient and quiet through the water, and it packs enough power to pull two riders at the same time.",
+    },
+    {
+      first_text: "Propeller",
+      second_text:
+        "The LIFT3 eFoil motor is extremely efficient and quiet through the water, and it packs enough power to pull two riders at the same time.",
+    },
+    {
+      first_text: "SHROUD",
+      second_text:
+        "The LIFT3 eFoil motor is extremely efficient and quiet through the water, and it packs enough power to pull two riders at the same time.",
+    },
+  ];
   return (
     <>
       <div className="relative">
@@ -79,14 +95,28 @@ function EFoil() {
           button_value="Watch Full Video"
         />
         <Efoil_sizes />
-        <Efoil_propeller />
+        const srcs = ; const titles = ;
+        <Efoil_propeller
+          srcs={["propeller.webp", "propeller_3.webp", "propeller_2.webp"]}
+          titles={[
+            "ADVANCED PROPULSION",
+            "PRECISION MACHINED PROPELLER",
+            "PROTECTIVE SHROUD",
+          ]}
+          hoverData={hoverData}
+        />
         <Efoil_description
           main_title="THE LIFT EXPERIENCE"
           main_description="The details make the perfect ride"
           button_value="Find a Demo Location"
           data={mainData.secondData}
         />
-        <Side_side />
+        <Side_side
+          image="avaliable.webp"
+          title="FINANCING AVAILABLE"
+          description="Financing is available for Lift Foils eFoils with AFFIRM, qualifying buyers are eligible for up to 0% APR for 12 months."
+          button_value="Shop Now"
+        />
         <Connect_system
           title="CUSTOMIZE YOUR RIDE"
           image="bg_efoil_2.webp"
